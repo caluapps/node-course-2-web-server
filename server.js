@@ -25,14 +25,14 @@ app.use((req, res, next) => {
   next();
 });
 
-//  Challenge: maintenance.hbs
+/*  Challenge: maintenance.hbs
 app.use((req, res, next) => {
   res.render('maintenance.hbs', {
     pageTitle: "Maintenance We'll be right back!",
     currentYear: new Date().getFullYear(),
     welcomeMessage: 'The Site is currently beeing updated. We will be back soon.'
   });
-});
+}); */
 
 app.use(express.static(__dirname + '/public'));
 
