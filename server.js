@@ -72,6 +72,15 @@ app.get('/about', (req, res) => {
   });
 });
 
+// Challenge:
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects',
+    currentYear: new Date().getFullYear(),
+    welcomeMessage: 'Portfolio page here'
+  });
+});
+
 /*  Challenge:
     /bad - send back json data with errorMessage */
 // Bad Page
